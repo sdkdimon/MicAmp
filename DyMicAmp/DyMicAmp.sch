@@ -1,0 +1,263 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DyMicAmp-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP_Small C1
+U 1 1 57DFFE28
+P 3300 1450
+F 0 "C1" V 3400 1400 50  0000 L CNN
+F 1 "4,7" V 3450 1300 50  0001 L CNN
+F 2 "Capacitors_SMD:C_1206" V 3500 1450 50  0000 C CNN
+F 3 "" H 3300 1450 50  0000 C CNN
+	1    3300 1450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L BF245A Q1
+U 1 1 57E0015F
+P 3800 1400
+F 0 "Q1" H 4000 1475 50  0000 L CNN
+F 1 "BF245A" H 4000 1400 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 4000 1325 50  0001 L CIN
+F 3 "" H 3800 1350 50  0000 L CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1450 3600 1450
+$Comp
+L R_Small R3
+U 1 1 57E00194
+P 3900 1800
+F 0 "R3" H 3750 1800 50  0000 L CNN
+F 1 "R_Small" H 3600 1700 50  0001 L CNN
+F 2 "Resistors_SMD:R_0805" H 4100 1400 50  0000 C CNN
+F 3 "" H 3900 1800 50  0000 C CNN
+	1    3900 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 57E001CF
+P 3900 900
+F 0 "R2" H 3950 900 50  0000 L CNN
+F 1 "R_Small" H 3930 860 50  0001 L CNN
+F 2 "Resistors_SMD:R_0805" H 3400 1000 50  0000 C CNN
+F 3 "" H 3900 900 50  0000 C CNN
+	1    3900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 57E00205
+P 3600 1750
+F 0 "R1" H 3450 1750 50  0000 L CNN
+F 1 "R_Small" H 3250 1750 50  0001 L CNN
+F 2 "Resistors_SMD:R_0805" H 3550 1400 50  0000 C CNN
+F 3 "" H 3600 1750 50  0000 C CNN
+	1    3600 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1450 3600 1650
+Connection ~ 3600 1450
+Wire Wire Line
+	3900 1600 3900 1700
+$Comp
+L BC817-40 Q2
+U 1 1 57E0034D
+P 4400 1200
+F 0 "Q2" H 4350 1500 50  0000 L CNN
+F 1 "BC817-25" H 4050 1400 50  0000 L CNN
+F 2 "SOT-23" H 4050 1300 50  0001 L CIN
+F 3 "" H 4400 1200 50  0000 L CNN
+	1    4400 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1200 4200 1200
+Wire Wire Line
+	3900 1000 3900 1200
+Connection ~ 3900 1200
+Wire Wire Line
+	3900 800  4750 800 
+Wire Wire Line
+	4500 800  4500 1000
+Connection ~ 4500 800 
+Wire Wire Line
+	3200 1550 3200 2000
+Wire Wire Line
+	3200 2000 4900 2000
+Wire Wire Line
+	3900 1900 3900 2000
+Connection ~ 3900 2000
+Wire Wire Line
+	3600 1850 3600 2000
+Connection ~ 3600 2000
+$Comp
+L CP_Small C2
+U 1 1 57E00816
+P 4100 1800
+F 0 "C2" H 4110 1870 50  0000 L CNN
+F 1 "ddwdad" H 4110 1720 50  0001 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4100 1800 50  0001 C CNN
+F 3 "" H 4100 1800 50  0000 C CNN
+	1    4100 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1900 4100 2000
+Connection ~ 4100 2000
+$Comp
+L CONN_01X02 P2
+U 1 1 57E0FDDE
+P 5100 1700
+F 0 "P2" H 5100 1850 50  0000 C CNN
+F 1 "Output" V 5200 1700 50  0000 C CNN
+F 2 "Connect:GS2" H 5200 1550 50  0000 C CNN
+F 3 "" H 5100 1700 50  0000 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 57E0FE2E
+P 3000 1500
+F 0 "P1" H 3000 1650 50  0000 C CNN
+F 1 "Input" V 3100 1500 50  0000 C CNN
+F 2 "Connect:GS2" H 3050 1300 50  0000 C CNN
+F 3 "" H 3000 1500 50  0000 C CNN
+	1    3000 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P3
+U 1 1 57E0FEC0
+P 5200 850
+F 0 "P3" H 5200 1000 50  0000 C CNN
+F 1 "VC" V 5300 850 50  0000 C CNN
+F 2 "Connect:GS2" H 5400 700 50  0000 C CNN
+F 3 "" H 5200 850 50  0000 C CNN
+	1    5200 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 1450
+Connection ~ 3200 1550
+Wire Wire Line
+	3900 1650 4100 1650
+Wire Wire Line
+	4100 1650 4100 1700
+Connection ~ 3900 1650
+$Comp
+L R_Small R4
+U 1 1 57E10137
+P 4500 1800
+F 0 "R4" H 4350 1800 50  0000 L CNN
+F 1 "R_Small" H 4150 1700 50  0001 L CNN
+F 2 "Resistors_SMD:R_0805" H 4500 1500 50  0000 C CNN
+F 3 "" H 4500 1800 50  0000 C CNN
+	1    4500 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1400 4500 1700
+Wire Wire Line
+	4500 1900 4500 2000
+Connection ~ 4500 2000
+$Comp
+L CP_Small C3
+U 1 1 57E10204
+P 4800 1650
+F 0 "C3" V 4700 1600 50  0000 L CNN
+F 1 "CP_Small" H 5350 1750 50  0001 L CNN
+F 2 "Capacitors_SMD:C_1206" V 4600 2000 50  0000 C CNN
+F 3 "" H 4800 1650 50  0000 C CNN
+	1    4800 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 1650 4700 1650
+Connection ~ 4500 1650
+Connection ~ 4900 1650
+Wire Wire Line
+	4900 2000 4900 1750
+Connection ~ 4900 2000
+$Comp
+L CP_Small C4
+U 1 1 57E10626
+P 4650 950
+F 0 "C4" H 4660 1020 50  0000 L CNN
+F 1 "CP_Small" H 4660 870 50  0001 L CNN
+F 2 "Capacitors_SMD:C_1206" H 4350 1200 50  0000 C CNN
+F 3 "" H 4650 950 50  0000 C CNN
+	1    4650 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 57E108E4
+P 4850 800
+F 0 "R5" V 4750 750 50  0000 L CNN
+F 1 "R_Small" H 4880 760 50  0001 L CNN
+F 2 "Resistors_SMD:R_0805" V 4650 550 50  0000 C CNN
+F 3 "" H 4850 800 50  0000 C CNN
+	1    4850 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 800  5000 800 
+Wire Wire Line
+	4650 800  4650 850 
+Connection ~ 4650 800 
+Wire Wire Line
+	4650 1050 4650 2000
+Wire Wire Line
+	4650 1100 5000 1100
+Wire Wire Line
+	5000 1100 5000 900 
+Connection ~ 5000 1100
+Connection ~ 4650 1100
+Connection ~ 4650 2000
+$EndSCHEMATC
